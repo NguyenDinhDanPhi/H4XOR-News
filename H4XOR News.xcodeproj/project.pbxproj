@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D09D78062A00F05F00F6FB50 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D78052A00F05F00F6FB50 /* Post.swift */; };
+		D09D78082A00F08600F6FB50 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D78072A00F08600F6FB50 /* DetailView.swift */; };
+		D09D780A2A00F46200F6FB50 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D78092A00F46200F6FB50 /* WebView.swift */; };
+		D0BCE84829FC0C08006869B5 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE84729FC0C08006869B5 /* NetworkingManager.swift */; };
+		D0BCE84B29FC0D79006869B5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE84A29FC0D79006869B5 /* Result.swift */; };
 		D0C384E029F52D1A0019C4EE /* H4XOR_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C384DF29F52D1A0019C4EE /* H4XOR_NewsApp.swift */; };
 		D0C384E229F52D1A0019C4EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C384E129F52D1A0019C4EE /* ContentView.swift */; };
 		D0C384E429F52D1B0019C4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C384E329F52D1B0019C4EE /* Assets.xcassets */; };
@@ -34,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D08163F12A00E97E0052AF2C /* H4XOR-News-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "H4XOR-News-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D09D78052A00F05F00F6FB50 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D09D78072A00F08600F6FB50 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D09D78092A00F46200F6FB50 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D0BCE84729FC0C08006869B5 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		D0BCE84A29FC0D79006869B5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D0C384DC29F52D1A0019C4EE /* H4XOR News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H4XOR News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C384DF29F52D1A0019C4EE /* H4XOR_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4XOR_NewsApp.swift; sourceTree = "<group>"; };
 		D0C384E129F52D1A0019C4EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0BCE84529FC0BD8006869B5 /* ViewsController */ = {
+			isa = PBXGroup;
+			children = (
+				D0C384E129F52D1A0019C4EE /* ContentView.swift */,
+				D09D78072A00F08600F6FB50 /* DetailView.swift */,
+				D09D78092A00F46200F6FB50 /* WebView.swift */,
+			);
+			path = ViewsController;
+			sourceTree = "<group>";
+		};
+		D0BCE84629FC0BEB006869B5 /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				D0BCE84729FC0C08006869B5 /* NetworkingManager.swift */,
+			);
+			path = NetworkingManager;
+			sourceTree = "<group>";
+		};
+		D0BCE84929FC0D66006869B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0BCE84A29FC0D79006869B5 /* Result.swift */,
+				D09D78052A00F05F00F6FB50 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D0C384D329F52D1A0019C4EE = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +132,11 @@
 		D0C384DE29F52D1A0019C4EE /* H4XOR News */ = {
 			isa = PBXGroup;
 			children = (
+				D08163F12A00E97E0052AF2C /* H4XOR-News-Info.plist */,
+				D0BCE84929FC0D66006869B5 /* Model */,
+				D0BCE84629FC0BEB006869B5 /* NetworkingManager */,
+				D0BCE84529FC0BD8006869B5 /* ViewsController */,
 				D0C384DF29F52D1A0019C4EE /* H4XOR_NewsApp.swift */,
-				D0C384E129F52D1A0019C4EE /* ContentView.swift */,
 				D0C384E329F52D1B0019C4EE /* Assets.xcassets */,
 				D0C384E529F52D1B0019C4EE /* Preview Content */,
 			);
@@ -257,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BCE84829FC0C08006869B5 /* NetworkingManager.swift in Sources */,
+				D09D78082A00F08600F6FB50 /* DetailView.swift in Sources */,
 				D0C384E229F52D1A0019C4EE /* ContentView.swift in Sources */,
+				D0BCE84B29FC0D79006869B5 /* Result.swift in Sources */,
 				D0C384E029F52D1A0019C4EE /* H4XOR_NewsApp.swift in Sources */,
+				D09D78062A00F05F00F6FB50 /* Post.swift in Sources */,
+				D09D780A2A00F46200F6FB50 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +466,7 @@
 				DEVELOPMENT_TEAM = FZCMHM49LE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "H4XOR-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +495,7 @@
 				DEVELOPMENT_TEAM = FZCMHM49LE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "H4XOR-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
